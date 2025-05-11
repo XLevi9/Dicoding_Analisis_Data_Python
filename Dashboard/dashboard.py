@@ -10,10 +10,10 @@ st.title("E-Commerce Customer Analysis Dashboard")
 
 # Load datanya
 try:
-    orders_df = pd.read_csv("orders_dataset.csv")
-    customers_df = pd.read_csv("customers_dataset.csv")
-    payments_df = pd.read_csv("order_payments_dataset.csv")
-    geo_data = pd.read_csv("main_data.csv")
+    orders_df = pd.read_csv("Dataset/orders_dataset.csv")
+    customers_df = pd.read_csv("Dataset/customers_dataset.csv")
+    payments_df = pd.read_csv("Dataset/order_payments_dataset.csv")
+    geo_data = pd.read_csv("Dashboard/main_data.csv")
     
     # Hitung persentase per kotanya
     total_transactions = geo_data['transaction_count'].sum()
